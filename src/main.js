@@ -16,7 +16,7 @@ let currentQuery = '';
 let currentPage = 1;
 let totalHits = 0;
 
-const formEl = document.querySelector('#search-form');
+const formEl = document.querySelector('#form');
 const loadMoreBtn = domRefs.loadMoreBtn;
 const galleryEl = domRefs.gallery;
 
@@ -126,6 +126,6 @@ const params = new URLSearchParams(window.location.search);
 const initialQuery = params.get('searchQuery');
 
 if (initialQuery) {
-  formEl.searchQuery.value = initialQuery;
+  document.querySelector('#searchQuery').value = initialQuery;
   formEl.dispatchEvent(new Event('submit'));
 }
