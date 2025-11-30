@@ -22,3 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+VITE_PIXABAY_KEY=53389210-1518ce0ab28dfc8ed2510f80a
